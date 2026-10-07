@@ -1,0 +1,323 @@
+{
+  "evaluation_id": "eval-461ab943dcf44f74961fdb23758b2c5a",
+  "created_at": "2026-10-05T03:27:27.095531+00:00",
+  "mode": "langchain",
+  "policy_version": "handoff-v1",
+  "repetitions": 3,
+  "max_turns": 36,
+  "status": "complete",
+  "pairs": [
+    {
+      "left": {
+        "run_id": "run-aff87176393d4c2487e74231f7f568bf",
+        "scenario": "Handoff Failure",
+        "mode": "langchain",
+        "status": "turn_limit",
+        "turns": 36,
+        "max_turns": 36,
+        "completed": false,
+        "rejected_actions": 3,
+        "rejected_by_agent": {
+          "blue": 1,
+          "green": 0,
+          "red": 2
+        },
+        "decision_errors": 0,
+        "messages": 8,
+        "model_calls": 36,
+        "input_tokens": 45552,
+        "output_tokens": 1500,
+        "usage_complete": true,
+        "model_duration_ms": 27675.32,
+        "models": [
+          "gpt-5.4-mini"
+        ],
+        "prompt_hashes": [
+          "18f7ffe9828a71f7893a7e9f3c855bda1b4d62f1c6c03b7e8f3b4ede2fd3712c",
+          "54517c3a829a800e411e97dcf8ba8dfb819718a89dbf819798a646949b65f4ac",
+          "9ecc479bf259f99abf4667c2a8420f613b75c56cb14a4c2cc760df7b8a3151e6"
+        ],
+        "settings": [
+          {
+            "max_retries": 0,
+            "strict": true,
+            "structured_output": "json_schema",
+            "timeout_seconds": 60
+          }
+        ],
+        "initial_state_sha256": "fff60ea7c15fcd97479d06d9c86f931b70c112aa4e747c91fab2493d4ed35fa4"
+      },
+      "right": {
+        "run_id": "run-5866872345de481a9b74c234b410745f",
+        "scenario": "Verified Handoff",
+        "mode": "langchain",
+        "status": "turn_limit",
+        "turns": 36,
+        "max_turns": 36,
+        "completed": false,
+        "rejected_actions": 1,
+        "rejected_by_agent": {
+          "blue": 0,
+          "green": 0,
+          "red": 1
+        },
+        "decision_errors": 0,
+        "messages": 10,
+        "model_calls": 36,
+        "input_tokens": 46028,
+        "output_tokens": 1527,
+        "usage_complete": true,
+        "model_duration_ms": 23972.76,
+        "models": [
+          "gpt-5.4-mini"
+        ],
+        "prompt_hashes": [
+          "54517c3a829a800e411e97dcf8ba8dfb819718a89dbf819798a646949b65f4ac",
+          "9ecc479bf259f99abf4667c2a8420f613b75c56cb14a4c2cc760df7b8a3151e6",
+          "fd0aab71eb78f73174a088331e62ecbde366c65398fc375543220e07b12b7264"
+        ],
+        "settings": [
+          {
+            "max_retries": 0,
+            "strict": true,
+            "structured_output": "json_schema",
+            "timeout_seconds": 60
+          }
+        ],
+        "initial_state_sha256": "fff60ea7c15fcd97479d06d9c86f931b70c112aa4e747c91fab2493d4ed35fa4"
+      },
+      "same_initial_state": true,
+      "same_models": true,
+      "same_settings": true,
+      "same_turn_limit": true,
+      "first_action_difference": {
+        "turn": 3,
+        "agent": "green",
+        "left_event": "e-0028",
+        "right_event": "e-0028",
+        "left_action": {
+          "type": "send_message",
+          "recipient": "blue",
+          "message": "RESOURCE (3, 2): visible resource at my current location."
+        },
+        "right_action": {
+          "type": "send_message",
+          "recipient": "blue",
+          "message": "RESOURCE (3, 2): I can currently see a resource at my location."
+        }
+      },
+      "note": "Separate executions. Differences do not establish causality. Message wording counts as an action difference."
+    },
+    {
+      "left": {
+        "run_id": "run-a0b39bb5197e4f3c8f9e6cad1500ab70",
+        "scenario": "Handoff Failure",
+        "mode": "langchain",
+        "status": "turn_limit",
+        "turns": 36,
+        "max_turns": 36,
+        "completed": false,
+        "rejected_actions": 3,
+        "rejected_by_agent": {
+          "blue": 2,
+          "green": 0,
+          "red": 1
+        },
+        "decision_errors": 0,
+        "messages": 10,
+        "model_calls": 36,
+        "input_tokens": 45647,
+        "output_tokens": 1433,
+        "usage_complete": true,
+        "model_duration_ms": 26659.69,
+        "models": [
+          "gpt-5.4-mini"
+        ],
+        "prompt_hashes": [
+          "18f7ffe9828a71f7893a7e9f3c855bda1b4d62f1c6c03b7e8f3b4ede2fd3712c",
+          "54517c3a829a800e411e97dcf8ba8dfb819718a89dbf819798a646949b65f4ac",
+          "9ecc479bf259f99abf4667c2a8420f613b75c56cb14a4c2cc760df7b8a3151e6"
+        ],
+        "settings": [
+          {
+            "max_retries": 0,
+            "strict": true,
+            "structured_output": "json_schema",
+            "timeout_seconds": 60
+          }
+        ],
+        "initial_state_sha256": "fff60ea7c15fcd97479d06d9c86f931b70c112aa4e747c91fab2493d4ed35fa4"
+      },
+      "right": {
+        "run_id": "run-c80162083f3a429cbc387db24dd60f23",
+        "scenario": "Verified Handoff",
+        "mode": "langchain",
+        "status": "turn_limit",
+        "turns": 36,
+        "max_turns": 36,
+        "completed": false,
+        "rejected_actions": 2,
+        "rejected_by_agent": {
+          "blue": 1,
+          "green": 0,
+          "red": 1
+        },
+        "decision_errors": 0,
+        "messages": 8,
+        "model_calls": 36,
+        "input_tokens": 46232,
+        "output_tokens": 1589,
+        "usage_complete": true,
+        "model_duration_ms": 31247.83,
+        "models": [
+          "gpt-5.4-mini"
+        ],
+        "prompt_hashes": [
+          "54517c3a829a800e411e97dcf8ba8dfb819718a89dbf819798a646949b65f4ac",
+          "9ecc479bf259f99abf4667c2a8420f613b75c56cb14a4c2cc760df7b8a3151e6",
+          "fd0aab71eb78f73174a088331e62ecbde366c65398fc375543220e07b12b7264"
+        ],
+        "settings": [
+          {
+            "max_retries": 0,
+            "strict": true,
+            "structured_output": "json_schema",
+            "timeout_seconds": 60
+          }
+        ],
+        "initial_state_sha256": "fff60ea7c15fcd97479d06d9c86f931b70c112aa4e747c91fab2493d4ed35fa4"
+      },
+      "same_initial_state": true,
+      "same_models": true,
+      "same_settings": true,
+      "same_turn_limit": true,
+      "first_action_difference": {
+        "turn": 3,
+        "agent": "green",
+        "left_event": "e-0028",
+        "right_event": "e-0028",
+        "left_action": {
+          "type": "send_message",
+          "recipient": "blue",
+          "message": "RESOURCE (3, 2): visible resource at my current location."
+        },
+        "right_action": {
+          "type": "send_message",
+          "recipient": "blue",
+          "message": "RESOURCE (3, 2): visible resource at my current position."
+        }
+      },
+      "note": "Separate executions. Differences do not establish causality. Message wording counts as an action difference."
+    },
+    {
+      "left": {
+        "run_id": "run-e65bf88161d74a268b6b78891eacab6f",
+        "scenario": "Handoff Failure",
+        "mode": "langchain",
+        "status": "turn_limit",
+        "turns": 36,
+        "max_turns": 36,
+        "completed": false,
+        "rejected_actions": 3,
+        "rejected_by_agent": {
+          "blue": 2,
+          "green": 0,
+          "red": 1
+        },
+        "decision_errors": 0,
+        "messages": 9,
+        "model_calls": 36,
+        "input_tokens": 45748,
+        "output_tokens": 1528,
+        "usage_complete": true,
+        "model_duration_ms": 32574.54,
+        "models": [
+          "gpt-5.4-mini"
+        ],
+        "prompt_hashes": [
+          "18f7ffe9828a71f7893a7e9f3c855bda1b4d62f1c6c03b7e8f3b4ede2fd3712c",
+          "54517c3a829a800e411e97dcf8ba8dfb819718a89dbf819798a646949b65f4ac",
+          "9ecc479bf259f99abf4667c2a8420f613b75c56cb14a4c2cc760df7b8a3151e6"
+        ],
+        "settings": [
+          {
+            "max_retries": 0,
+            "strict": true,
+            "structured_output": "json_schema",
+            "timeout_seconds": 60
+          }
+        ],
+        "initial_state_sha256": "fff60ea7c15fcd97479d06d9c86f931b70c112aa4e747c91fab2493d4ed35fa4"
+      },
+      "right": {
+        "run_id": "run-026fcabac5434e6e9abcae109ba157c4",
+        "scenario": "Verified Handoff",
+        "mode": "langchain",
+        "status": "turn_limit",
+        "turns": 36,
+        "max_turns": 36,
+        "completed": false,
+        "rejected_actions": 3,
+        "rejected_by_agent": {
+          "blue": 1,
+          "green": 0,
+          "red": 2
+        },
+        "decision_errors": 0,
+        "messages": 9,
+        "model_calls": 36,
+        "input_tokens": 46107,
+        "output_tokens": 1579,
+        "usage_complete": true,
+        "model_duration_ms": 30163.83,
+        "models": [
+          "gpt-5.4-mini"
+        ],
+        "prompt_hashes": [
+          "54517c3a829a800e411e97dcf8ba8dfb819718a89dbf819798a646949b65f4ac",
+          "9ecc479bf259f99abf4667c2a8420f613b75c56cb14a4c2cc760df7b8a3151e6",
+          "fd0aab71eb78f73174a088331e62ecbde366c65398fc375543220e07b12b7264"
+        ],
+        "settings": [
+          {
+            "max_retries": 0,
+            "strict": true,
+            "structured_output": "json_schema",
+            "timeout_seconds": 60
+          }
+        ],
+        "initial_state_sha256": "fff60ea7c15fcd97479d06d9c86f931b70c112aa4e747c91fab2493d4ed35fa4"
+      },
+      "same_initial_state": true,
+      "same_models": true,
+      "same_settings": true,
+      "same_turn_limit": true,
+      "first_action_difference": {
+        "turn": 3,
+        "agent": "green",
+        "left_event": "e-0028",
+        "right_event": "e-0028",
+        "left_action": {
+          "type": "send_message",
+          "recipient": "blue",
+          "message": "RESOURCE (3, 2): resource is visible here at our current location."
+        },
+        "right_action": {
+          "type": "send_message",
+          "recipient": "blue",
+          "message": "RESOURCE (3, 2): I can see a resource at my current location."
+        }
+      },
+      "note": "Separate executions. Differences do not establish causality. Message wording counts as an action difference."
+    }
+  ],
+  "run_ids": [
+    "run-aff87176393d4c2487e74231f7f568bf",
+    "run-5866872345de481a9b74c234b410745f",
+    "run-a0b39bb5197e4f3c8f9e6cad1500ab70",
+    "run-c80162083f3a429cbc387db24dd60f23",
+    "run-e65bf88161d74a268b6b78891eacab6f",
+    "run-026fcabac5434e6e9abcae109ba157c4"
+  ],
+  "scope": "Controlled prompt fault injection on one fixed map. Baseline over-trusts reports; verified policy checks current observations. Small descriptive sample, not a general model benchmark."
+}
